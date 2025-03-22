@@ -19,7 +19,34 @@
 <link href="${pageContext.request.contextPath}/resources/css/bootstrap-table.min.css" rel="stylesheet">
 </head>
 <body>
-	<nav></nav>
+	<nav class="navbar bg-primary">
+		<ul class="nav d-flex w-100">
+			<li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="${pageContext.request.contextPath}/">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="${pageContext.request.contextPath}/clientes/findAll">Clientes</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="${pageContext.request.contextPath}/categorias/findAll">Categorias</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="${pageContext.request.contextPath}/autores/findAll">Autores</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="${pageContext.request.contextPath}/libros/findAll">Libros</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="${pageContext.request.contextPath}/facturacion/">Facturación</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="${pageContext.request.contextPath}/acercade/">Acerca de</a>
+			</li>
+			<li class="nav-item ms-auto">
+				<a class="nav-link" href="${pageContext.request.contextPath}/login/">Iniciar sesión</a>
+			</li>
+		</ul>
+	</nav>
 	<section>
 		<div class="container" style="padding-top: 5px;">	
 			<h1>Categorias</h1>
@@ -48,7 +75,12 @@
 			</form>
 		</div>
 	</section>
-	<footer></footer>
+	<footer class="bg-dark text-white text-center py-3">
+		<div class="container">
+			<p>&copy; 2025 Librería ABC. Todos los derechos reservados.</p>
+			<p>Desarrollador por <strong>ismac libreria</strong></p>
+		</div>
+	</footer>
 	<script src="${pageContext.request.contextPath}/resources/js/bootstrap.bundle.min.js"></script>
 	<script src="${pageContext.request.contextPath}/resources/js/jquery-3.7.1.min.js"></script>
 	<script src="${pageContext.request.contextPath}/resources/js/bootstrap.min.js"></script>

@@ -12,7 +12,34 @@
 <link href="${pageContext.request.contextPath}/resources/css/bootstrap-table.min.css" rel="stylesheet">
 </head>
 <body>
-	<nav></nav>
+	<nav class="navbar bg-primary">
+		<ul class="nav d-flex w-100">
+			<li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="${pageContext.request.contextPath}/">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="${pageContext.request.contextPath}/clientes/findAll">Clientes</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="${pageContext.request.contextPath}/categorias/findAll">Categorias</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="${pageContext.request.contextPath}/autores/findAll">Autores</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="${pageContext.request.contextPath}/libros/findAll">Libros</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="${pageContext.request.contextPath}/facturacion/">Facturación</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="${pageContext.request.contextPath}/acercade/">Acerca de</a>
+			</li>
+			<li class="nav-item ms-auto">
+				<a class="nav-link" href="${pageContext.request.contextPath}/login/">Iniciar sesión</a>
+			</li>
+		</ul>
+	</nav>
 	<section>
 		<h1>Clientes</h1>
 		<div class="container" style="text-align: center;">
